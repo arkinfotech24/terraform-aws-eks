@@ -99,6 +99,30 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 kubectl get pods -n kube-system
 ```
 
+```
+1. VPC Setup
+Created a secure and scalable network environment with private and public subnets, route tables, NAT gateways, and internet gateways, all wrapped in a Terraform module.
 
+2. Security Groups
+Defined fine-grained access control for all resources including bastion, VPN, Load balancer, RDS, EKS cluster.
 
+3. Bastion Host Setup
+Provisioned a bastion EC2 instance in the public subnet to allow SSH access into the private network for troubleshooting and maintenance.
+
+4. VPN Deployment
+Configured a VPN EC2 instance to enable encrypted internal access for administrative operations.
+
+5. EKS Cluster & Node Groups
+Created a managed Amazon EKS Cluster with associated private worker nodes (Node Groups) for scalable container orchestration.
+
+6. Ingress Controller
+Set up the Ingress Controller in the public subnet to manage external HTTP/S traffic routed to the services running inside the EKS cluster.
+
+7. Database
+Deployed an RDS MySQL instance in the private subnet with encryption, backups, and restricted access.
+
+8. Route53 & CDN
+Configured Route 53 for DNS-based routing to the Ingress endpoint.
+Integrated with a Content Delivery Network (CDN) to accelerate content delivery and reduce latency for users.
+```
 
