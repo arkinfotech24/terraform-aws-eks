@@ -100,6 +100,10 @@ kubectl get pods -n kube-system
 ```
 
 ```
+𝗔𝗪𝗦 𝗜𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁 𝗳𝗼𝗿 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻
+Excited to share my part of my project where I successfully deployed a scalable application infrastructure on AWS using Terraform! 🚀
+```
+```
 1. VPC Setup
 Created a secure and scalable network environment with private and public subnets, route tables, NAT gateways, and internet gateways, all wrapped in a Terraform module.
 
